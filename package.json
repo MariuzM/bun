@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "elysia": "^0.7.28",
+    "semver": "^7.5.4",
     "sharp": "0.33.0-alpha.11"
   },
   "devDependencies": {
