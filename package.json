@@ -1,0 +1,26 @@
+{
+  "name": "bun-sharp",
+  "version": "1.0.0",
+  "scripts": {
+    "d": "bun run --watch src/app.ts",
+    "b": "bun build ./src/app.ts --outdir ./build --target bun --external sharp",
+    "dev": "bun run d",
+    "build": "bun run b",
+    "start": "bun run ./build/app.js"
+  },
+  "dependencies": {
+    "elysia": "^0.7.28",
+    "sharp": "0.33.0-alpha.11"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.1",
+    "@types/uuid": "^9.0.7",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
+    "bun-types": "^1.0.12",
+    "eslint": "8.54.0",
+    "eslint-plugin-import": "^2.29.0",
+    "prettier": "^3.1.0"
+  },
+  "module": "src/app.js"
+}
